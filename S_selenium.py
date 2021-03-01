@@ -3,10 +3,16 @@ import time
 import wget
 
 
-list = ['https://pucminas.instructure.com/courses/26522/pages/introducao-aos-testes-de-hipoteses?module_item_id=1028755',
-        'https://pucminas.instructure.com/courses/26522/pages/valor-p-parte-1?module_item_id=1028758',
-        'https://pucminas.instructure.com/courses/26522/pages/valor-p-parte-2?module_item_id=1028760',
-        'https://pucminas.instructure.com/courses/26522/pages/teste-para-duas-variancias?module_item_id=1028766'
+list = [
+
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-principios?module_item_id=371832',
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-id3?module_item_id=371838',
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-overfitting?module_item_id=371844',
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-atributos-continuos?module_item_id=371850',
+'https://pucminas.instructure.com/courses/24705/pages/aula-pratica-arvore-de-decisao?module_item_id=371856',
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-classificacao-bayesiana?module_item_id=371869',
+'https://pucminas.instructure.com/courses/24705/pages/aula-pratica-colab-naive-bayes-iris?module_item_id=371872'
+
 ]
 
 
@@ -19,7 +25,7 @@ driver.get('https://pucminas.instructure.com/login/canvas')
 password = driver.find_element_by_id("pseudonym_session_password")
 username = driver.find_element_by_id("pseudonym_session_unique_id")
 username.send_keys("1289202")
-password.send_keys("senha")
+password.send_keys("112233abcG.")
 driver.find_element_by_xpath('//*[@id="login_form"]/div[3]/div[2]/button').click()
 
 my_dict = {}
@@ -43,8 +49,7 @@ for i in list:
       print(url2)
       print('Baixando ' + titulo2)
       converted_num = f'{numero}'
-      wget.download(url2, "./videos/ESTATISTICA/TESTES DE HIPOTESES/" + converted_num + ' - ' + titulo2  + extensao )
-
+      wget.download(url2, "./video/" + converted_num + ' - ' + titulo2.replace(':','')  + extensao )
 
 
 
