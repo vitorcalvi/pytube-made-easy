@@ -5,14 +5,9 @@ import wget
 
 list = [
 
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-principios?module_item_id=371832',
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-id3?module_item_id=371838',
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-overfitting?module_item_id=371844',
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-arvore-de-decisao-atributos-continuos?module_item_id=371850',
-'https://pucminas.instructure.com/courses/24705/pages/aula-pratica-arvore-de-decisao?module_item_id=371856',
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-classificacao-bayesiana?module_item_id=371869',
-'https://pucminas.instructure.com/courses/24705/pages/aula-pratica-colab-naive-bayes-iris?module_item_id=371872'
-
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-metodos-de-agrupamento?module_item_id=409583',
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-k-means?module_item_id=409579',
+'https://pucminas.instructure.com/courses/24705/pages/videoaula-algoritmos-hierarquicos?module_item_id=409584'
 ]
 
 
@@ -49,7 +44,7 @@ for i in list:
       print(url2)
       print('Baixando ' + titulo2)
       converted_num = f'{numero}'
-      wget.download(url2, "./video/" + converted_num + ' - ' + titulo2.replace(':','')  + extensao )
+      wget.download(url2, "./video/Machine Learning/Princípios e técnicas de aprendizado de máquina/Unidade 4 - Análise de agrupamentos (Clusterização)/2- Algoritmos de agrupamento/" + converted_num + ' - ' + titulo2.replace(':','')  + extensao )
 
 
 

@@ -1204,3 +1204,14 @@ JavaScript error: https://files.instructuremedia.com/build/7071f5bc53a694fbf7aeb
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1614627712751	geckodriver	INFO	Listening on 127.0.0.1:52105
+1614627715775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\vitor\\AppData\\Local\\Temp\\rust_mozprofile3Utg2f"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614627719239	Marionette	INFO	Listening on port 52113
+1614627719457	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614627761332	geckodriver	INFO	Listening on 127.0.0.1:52207
+1614627764376	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\vitor\\AppData\\Local\\Temp\\rust_mozprofileGcSkGq"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614627767136	Marionette	INFO	Listening on port 52215
+1614627767526	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://files.instructuremedia.com/build/7071f5bc53a694fbf7aeb03db5fbffa8a3722d16/__build__/default/app-5b68922f18dcec27866f.js, line 24: Error: Cannot find module './pt_BR.json'
