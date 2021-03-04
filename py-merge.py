@@ -4,7 +4,7 @@ from natsort import natsorted
 
 L =[]
 
-for root, dirs, files in os.walk('./videos/ESTATISTICA/TESTES DE HIPOTESES/'):
+for root, dirs, files in os.walk('./video/ML/PT/Unidade 2 - Regras de associação/2- Algoritmos de regras de associação'):
 
     #files.sort()
     files = natsorted(files)
@@ -15,4 +15,4 @@ for root, dirs, files in os.walk('./videos/ESTATISTICA/TESTES DE HIPOTESES/'):
             L.append(video)
 
 final_clip = concatenate_videoclips(L)
-final_clip.to_videofile("TESTES DE HIPOTESES.mp4", fps=24, remove_temp=False)
+final_clip.to_videofile("./video/Youtube/Unidade 2.2- Algoritmos de regras de associação" + ".mp4",  remove_temp=False)

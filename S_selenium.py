@@ -20,7 +20,7 @@ driver.get('https://pucminas.instructure.com/login/canvas')
 password = driver.find_element_by_id("pseudonym_session_password")
 username = driver.find_element_by_id("pseudonym_session_unique_id")
 username.send_keys("1289202")
-password.send_keys("112233abcG.")
+password.send_keys("")
 driver.find_element_by_xpath('//*[@id="login_form"]/div[3]/div[2]/button').click()
 
 my_dict = {}
