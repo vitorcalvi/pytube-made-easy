@@ -5,9 +5,16 @@ import wget
 
 list = [
 
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-metodos-de-agrupamento?module_item_id=409583',
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-k-means?module_item_id=409579',
-'https://pucminas.instructure.com/courses/24705/pages/videoaula-algoritmos-hierarquicos?module_item_id=409584'
+'https://pucminas.instructure.com/courses/24711/modules/items/372969',
+'https://pucminas.instructure.com/courses/24711/modules/items/372972',
+'https://pucminas.instructure.com/courses/24711/modules/items/372977',
+'https://pucminas.instructure.com/courses/24711/modules/items/372980',
+'https://pucminas.instructure.com/courses/24711/modules/items/372986',
+'https://pucminas.instructure.com/courses/24711/modules/items/372992',
+'https://pucminas.instructure.com/courses/24711/modules/items/372995',
+'https://pucminas.instructure.com/courses/24711/modules/items/372998',
+'https://pucminas.instructure.com/courses/24711/modules/items/372999'
+
 ]
 
 
@@ -44,7 +51,7 @@ for i in list:
       print(url2)
       print('Baixando ' + titulo2)
       converted_num = f'{numero}'
-      wget.download(url2, "./video/Machine Learning/Princípios e técnicas de aprendizado de máquina/Unidade 4 - Análise de agrupamentos (Clusterização)/2- Algoritmos de agrupamento/" + converted_num + ' - ' + titulo2.replace(':','')  + extensao )
+      wget.download(url2, "./video/ML/RDados/Uni4/" + converted_num + ' - ' + titulo2.replace(':','')  + extensao )
 
 
 
