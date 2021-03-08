@@ -50,31 +50,13 @@ driver.get(site_ida_dinheiro)
 import time 
 
 time.sleep(6)
-# Get text from all elements
-#text_contents = [el.text for el in driver.find_elements_by_xpath('//*[@id="main-content"]/div[4]/div/div[2]/section[1]/ul')]
-
-#print(text_contents)
-#for text in text_contents:
-#    print(text)
 
 
-#flights = [el.text for el in driver.find_elements_by_xpath('//*[@id="main-content"]/div[4]/div/div[2]/section[1]/ul')]
-
-#print(flights)
-
-origem = 
-destino =
-tempo_total
+origem = ''
+destino = ''
+tempo_total = ''
 precos = driver.find_elements_by_xpath('//*[@id="main-content"]/div[4]/div/div[2]/section[1]/ul/li/div/button/div/div/span/span/span/span')
-#print(html_list)
 
-
-#/html/body/div[2]/div[2]/div/div[1]/div[4]/div/div[2]/section[1]/ul/li[1]/div/button/div/div/span[2]/span/span[2]/span
-
-#for item in html_list:
-#    text = item.text
-
-#print(text)
 
 
 for item in items:
